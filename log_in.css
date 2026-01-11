@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Anton";
+    src: url(fonts/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: "opensans-regular";
+    src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "opensans-bold";
+    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+body
+{
+    font-family: "Anton";
+    background: linear-gradient(
+    to bottom,
+    #8C87E1 0%,
+    #460880 67%
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12vh;
+}
+
+.logo > img
+{
+    width: 9vw;
+    height: auto;
+}
+
+.logo h1
+{
+    font-size: 3.5rem;
+    letter-spacing: 0.1vw;
+}
+
+
+.username-box
+{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-box
+{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+label
+{
+    font-size: 2rem;
+    letter-spacing: 0.1vw;
+}
+
+input
+{
+    width: 26vw;
+    height: 4vh;
+    border-radius: 0.7vw;
+    margin-top: 1vh;
+}
+
+button
+{
+    color: #460880;
+    padding: 0.5vw;
+    background-color: #B0ACF9;
+    border-radius: 1vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button
+{
+    display: flex;
+    justify-content: end;
+    margin-top: 4vh;
+    margin-bottom: 25vh;
+}
+
