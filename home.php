@@ -1,9 +1,17 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
     <title>Home</title>
 </head>
 <body>
@@ -12,7 +20,7 @@
             <img src="images/logo1.png" alt="logo">
             <h3>Gemorskos</h3>
         </div>
-        <a href="">Log Out</a>
+        <a href="log_out.php">Log Out</a>
     </header>
     <section class="hero">
         <div class="hero-text">
@@ -22,6 +30,7 @@
         <img src="images/hero-image.png" alt="hero-image">
     </section>
     <main>
+        <div class="phpmyadmin"><a href="http://localhost:8080/index.php?route=/&db=test&table=people">GO TO DATABASE</a></div>
         <div class="title">
             <h1>Latest news</h1>
             <div class="horizontal-line"></div>
@@ -135,7 +144,7 @@
                 </div>
             </div>
             <div class="footer-horizontal-line"></div>
-            <h3>&copy;2025 Gemorskos. All rights reserved.</h3>
+            <h3>&copy;2026 Gemorskos. All rights reserved.</h3>
         </footer>
 </body>
 </html>

@@ -95,6 +95,30 @@ main
     margin-bottom: 15vh;
 }
 
+.phpmyadmin 
+{
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.5rem;
+    background-color: #8C87E1;
+    border-radius: 1vw;
+    width: 30vw;
+    justify-self: center;
+    margin-block: 10vh;
+}
+
+.phpmyadmin a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.phpmyadmin:hover
+{
+    background-color: #6d69b0;
+    cursor: pointer;
+}
+
 .title
 {
     display: flex;
