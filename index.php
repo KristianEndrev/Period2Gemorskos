@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         try {
             $stmt = $dbHandler->prepare(
-                "SELECT username, password FROM people WHERE username = :username"
+                "SELECT username, password FROM user WHERE username = :username"
             );
             $stmt->execute([':username' => $username]);
             $user = $stmt->fetch(PDO::FETCH_ASSOC);

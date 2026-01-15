@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             try {
                  // Username directly into 'name' column
                 $hashedPass = password_hash($pass, PASSWORD_BCRYPT);
-                $stmt = $dbHandler->prepare("INSERT INTO people (fname, lname, username, password) VALUES (:fname, :lname, :username, :hashedpass)");
+                $stmt = $dbHandler->prepare("INSERT INTO user (username, password, first_name, last_name) VALUES (:username, :hashedpass, :fname, :lname)");
                 $stmt->bindParam(':username', $user, PDO::PARAM_STR);
                 $stmt->bindParam(':fname', $fname, PDO::PARAM_STR);
                 $stmt->bindParam(':lname', $lname, PDO::PARAM_STR);
