@@ -1,36 +1,93 @@
-body {
-            background: #0d0d0d;
-            color: #e0e0e0;
-            font-family: monospace;
-            padding: 40px;
+@font-face {
+            font-family: "Anton";
+            src: url(fonts/Anton/Anton-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "opensans-regular";
+            src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "opensans-bold";
+            src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Anton";
+            background: linear-gradient(
+                to bottom,
+                #8C87E1 0%,
+                #460880 67%
+            );
+            min-height: 100vh;
+            color: white;
+            padding: 3vw;
+        }
+
+        a.back {
+            display: inline-block;
+            margin-bottom: 4vh;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        a.back:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 6vh;
+            font-size: 2.5rem;
+        }
+
+        .table-container {
+            background-color: rgba(176, 172, 249, 0.9);
+            border-radius: 2vw;
+            padding: 2vw;
+            overflow-x: auto;
         }
 
         table {
-            border-collapse: collapse;
             width: 100%;
-        }
-
-        th, td {
-            border: 1px solid #333;
-            padding: 10px;
-            text-align: left;
+            border-collapse: collapse;
+            font-family: "opensans-regular";
+            color: #460880;
         }
 
         th {
-            background: #111;
+            background-color: #8C87E1;
+            color: #460880;
+            font-family: "opensans-bold";
+            padding: 1vw;
+            text-align: left;
+            border-bottom: 3px solid #460880;
+        }
+
+        td {
+            padding: 1vw;
+            border-bottom: 1px solid #6d69b0;
         }
 
         tr:nth-child(even) {
-            background: #161616;
+            background-color: rgba(255, 255, 255, 0.3);
         }
 
-        a {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #aaa;
-            text-decoration: none;
+        tr:hover {
+            background-color: rgba(140, 135, 225, 0.6);
         }
 
-        a:hover {
-            color: #fff;
+        .empty {
+            text-align: center;
+            font-family: "opensans-regular";
+            font-size: 1.5rem;
+            padding: 5vh;
         }
