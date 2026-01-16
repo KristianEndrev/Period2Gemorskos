@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
         <img src="images/hero-image.png" alt="hero-image">
     </section>
     <main>
-        <div class="phpmyadmin"><a href="gemorskos.com/phpmyadmin">GO TO DATABASE</a></div>
+        <div class="phpmyadmin"><a href="phpmyadmin">GO TO DATABASE</a></div>
         <div class="title">
             <h1>Latest news</h1>
             <div class="horizontal-line"></div>
