@@ -1,10 +1,10 @@
 <?php
-session_start();
+// session_start();
 
-if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
-    exit;
-}
+// if (!isset($_SESSION['username'])) {
+//     header("Location: index.php");
+//     exit;
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,10 @@ if (!isset($_SESSION['username'])) {
         <img src="images/hero-image.png" alt="hero-image">
     </section>
     <main>
-        <div class="phpmyadmin"><a href="phpmyadmin">GO TO DATABASE</a></div>
+        <div class="database-data">
+            <div class="phpmyadmin"><a href="phpmyadmin">GO TO DATABASE</a></div>
+            <div class="phpmyadmin"><a href="table.php">DATA TABLE</a></div>
+        </div>
         <div class="title">
             <h1>Latest news</h1>
             <div class="horizontal-line"></div>

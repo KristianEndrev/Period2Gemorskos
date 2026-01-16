@@ -1,0 +1,36 @@
+body {
+            background: #0d0d0d;
+            color: #e0e0e0;
+            font-family: monospace;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #111;
+        }
+
+        tr:nth-child(even) {
+            background: #161616;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+        }

@@ -95,6 +95,12 @@ main
     margin-bottom: 15vh;
 }
 
+.database-data
+{
+    display: flex;
+    justify-content: space-around;
+}
+
 .phpmyadmin 
 {
     text-align: center;
