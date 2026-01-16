@@ -1,7 +1,7 @@
 <?php
 $dbHandler = null;
 try {
-    $dbHandler = new PDO("mysql:host=localhost;dbname=gemorskos;charset=utf8", "admin", "Team IT-1C ");
+    $dbHandler = new PDO("mysql:host=127.0.0.1;dbname=gemorskos;charset=utf8", "admin", "Team IT-1C ");
     $dbHandler->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     $dbHandler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(Exception $ex) {
