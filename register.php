@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 header("Location: index.php");
                 exit;
             } catch (PDOException $ex) {
-                if ($ex->getCode() == 23000) {
+                if ($ex->errorInfo[1] == 1062) {
                     $msgs[] = "Username already exists.";
                 } else {
                     printError($ex->getMessage());
